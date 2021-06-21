@@ -17,7 +17,7 @@ defmodule LiveviewAppWeb.Router do
   scope "/", LiveviewAppWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    live "/", UserLive.Index, :index
 
     live "/users", UserLive.Index, :index
     live "/users/new", UserLive.Index, :new
